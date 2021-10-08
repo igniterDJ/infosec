@@ -7,7 +7,6 @@
 int make_socket(char *host, char *port) { 
 struct addrinfo hints, *servinfo, *p; 
 int sock, r;
-// fprintf(stderr, "[Connecting -> %s:%s\n", host, port); 
 memset(&hints, 0, sizeof(hints));
 hints.ai_family = AF_UNSPEC; 
 hints.ai_socktype = SOCK_STREAM;
